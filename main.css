@@ -3,3 +3,7 @@
   margin: 0;
 }
 
+.header-container .page-title {
+  text-align: center;
+  padding: 25px;
+}
