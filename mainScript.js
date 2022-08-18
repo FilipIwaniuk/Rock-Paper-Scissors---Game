@@ -1,6 +1,5 @@
 "use strict"
 
-
 // BASE FUNCTION FOR COMPUTER SELECTION
 function getComputerChoice() {
 
@@ -31,24 +30,47 @@ function getComputerChoice() {
 
 }
 
-// BASE FUNCTION FOR USER INPUT ACCEPTANCE 
-// function gameRounds() {
-//   const baseRounds = 5;
-//   let counter = 0;
-//   let userInput;
-//   let collectionInputs = [];
+// BASE FUNCTION FOR USER SELECTION
+function userInput() {
 
-//   while (counter < baseRounds) {
-//     userInput = parseInt(prompt(`input value: `))
-//     collectionInputs.push(userInput)
-//     counter++;
-//   }
+  let input = ` `;
+  let stringValidation;
 
-//   console.log(`OUTSIDE OF LOOP TEST ${userInput}`);
-//   console.table(collectionInputs);
-// }
+  console.log(`Select from: scissors, paper and rock! `);
+  input = prompt(`Please enter value from the following selection:`);
+
+  if (input.length > 1) {
+
+    stringValidation = input.toLowerCase();
+    console.log(stringValidation);
+
+    return stringValidation;
+
+  } else {
+    console.log(`incorrect input!`);
+    return `incorrect input!`
+  }
+}
 
 
-// function userInput() {
-//   let input 
-// }
+
+
+
+
+/* BASE FUNCTION FOR USER INPUT ACCEPTANCE
+function gameRounds() {
+  const baseRounds = 5;
+  let counter = 0;
+  let userInput;
+  let collectionInputs = [];
+ 
+  while (counter < baseRounds) {
+    userInput = parseInt(prompt(`input value: `))
+    collectionInputs.push(userInput)
+    counter++;
+  }
+ 
+  console.log(`OUTSIDE OF LOOP TEST ${userInput}`);
+  console.table(collectionInputs);
+}
+*/
