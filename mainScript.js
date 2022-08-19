@@ -52,7 +52,18 @@ function userInput() {
   }
 }
 
+/* 
+  THE FUNCTION WILL CALL @userInput and @getComputerChoice to enable the player 
+  to play 5 rounds of the game.
+*/
 
+function winnerCheck() {
+
+  let userResult = userInput();
+  let computerResult = getComputerChoice();
+  console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
+  
+}
 
 
 
