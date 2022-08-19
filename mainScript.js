@@ -61,8 +61,12 @@ function winnerCheck() {
 
   let userResult = userInput();
   let computerResult = getComputerChoice();
+
   console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
-  
+
+
+  // GENERATE function to compare inputs to identify the winner by another function
+
 }
 
 
