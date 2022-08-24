@@ -56,28 +56,10 @@ function userInput() {
   }
 }
 
-/* 
-  THE FUNCTION WILL CALL @userInput and @getComputerChoice to enable the player 
-  to play 5 rounds of the game.
-*/
-
-function winnerCheck() {
-
-  let userResult = userInput();
-  let computerResult = getComputerChoice();
-
-  // CALLING THE INPUT COMPARISON FUNCTION TO VALIDATE THE INPUT AND PROVIDE A WINNER!
-  let gameResult = inputComparison(userResult, computerResult);
-
-  // console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
-
-  // console.log(`the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`);
-  return `the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`;
-}
 
 /*
-  The function validates the winner by the usage of inputs collection, such checks the winner by 
-  comparison of inputs string content, and passes the results via return statement. 
+The function validates the winner by the usage of inputs collection, such checks the winner by 
+comparison of inputs string content, and passes the results via return statement. 
 */
 
 
@@ -114,6 +96,26 @@ function inputComparison(user, computer) {
     return winnerDefinition || `computer has won!`
   }
 }
+
+/* 
+  THE FUNCTION WILL CALL @userInput and @getComputerChoice to enable the player 
+  to play 5 rounds of the game.
+*/
+
+function winnerCheck() {
+
+  let userResult = userInput();
+  let computerResult = getComputerChoice();
+
+  // CALLING THE INPUT COMPARISON FUNCTION TO VALIDATE THE INPUT AND PROVIDE A WINNER!
+  let gameResult = inputComparison(userResult, computerResult);
+
+  // console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
+
+  // console.log(`the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`);
+  return `the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`;
+}
+
 
 /* BASE FUNCTION FOR USER INPUT ACCEPTANCE
 function gameRounds() {
