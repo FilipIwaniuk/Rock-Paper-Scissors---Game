@@ -25,7 +25,8 @@ function getComputerChoice() {
 
   stringValidation = computerChoice.toLowerCase();
 
-  console.log(computerChoice);
+  // console.log(computerChoice);
+
   return stringValidation;
 
 }
@@ -42,12 +43,15 @@ function userInput() {
   if (input.length > 1) {
 
     stringValidation = input.toLowerCase();
-    console.log(stringValidation);
+
+    // console.log(stringValidation);
 
     return stringValidation;
 
   } else {
-    console.log(`incorrect input!`);
+
+    // console.log(`incorrect input!`);
+
     return `incorrect input!`
   }
 }
@@ -70,8 +74,11 @@ function winnerCheck() {
   console.log(`the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`);
 }
 
-// GENERATE function to compare inputs to identify the winner by another function
-// COMPARE THE INPUTS OF PLAYERS ADD VALIDATE THE WINNER!
+/*
+  The function validates the winner by the usage of inputs collection, such checks the winner by 
+  comparison of inputs string content, and passes the results via return statement. 
+*/
+
 
 function inputComparison(user, computer) {
 
@@ -106,8 +113,6 @@ function inputComparison(user, computer) {
     return winnerDefinition || `computer has won!`
   }
 }
-
-
 
 /* BASE FUNCTION FOR USER INPUT ACCEPTANCE
 function gameRounds() {
