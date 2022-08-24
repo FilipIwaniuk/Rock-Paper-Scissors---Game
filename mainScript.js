@@ -71,7 +71,8 @@ function winnerCheck() {
 
   // console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
 
-  console.log(`the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`);
+  // console.log(`the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`);
+  return `the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`;
 }
 
 /*
