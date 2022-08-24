@@ -113,8 +113,24 @@ function winnerCheck() {
   // console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
 
   // console.log(`the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`);
-  return `the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`;
+  return `Game result: ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice: ${computerResult}`;
 }
+
+
+/* 
+  The loop below initializes the function via usage of for loop to play 
+  the game 5 times.
+*/
+
+let gameResultCollection = [];
+
+for (let x = 0; x < 5; x++) {
+  let collection = winnerCheck();
+  gameResultCollection.push(collection)
+}
+
+console.table(gameResultCollection);
+
 
 
 /* BASE FUNCTION FOR USER INPUT ACCEPTANCE
