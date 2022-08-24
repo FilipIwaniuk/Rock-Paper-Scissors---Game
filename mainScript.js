@@ -62,13 +62,50 @@ function winnerCheck() {
   let userResult = userInput();
   let computerResult = getComputerChoice();
 
-  console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
+  // CALLING THE INPUT COMPARISON FUNCTION TO VALIDATE THE INPUT AND PROVIDE A WINNER!
+  let gameResult = inputComparison(userResult, computerResult);
 
+  // console.log(`game function user input: ${userResult} \n computer choice: ${computerResult}`);
 
-  // GENERATE function to compare inputs to identify the winner by another function
-
+  console.log(`the game winner is ${gameResult} ------------------- user choice: ${userResult} ------------------- computer choice ${computerResult}`);
 }
 
+// GENERATE function to compare inputs to identify the winner by another function
+// COMPARE THE INPUTS OF PLAYERS ADD VALIDATE THE WINNER!
+
+function inputComparison(user, computer) {
+
+  let computerValidator = computer.toLowerCase();
+  let userValidator = user.toLowerCase();
+  let winnerDefinition = ``;
+
+  // Validation of user input to be within the range of - paper, scissors and rock.
+
+  if (userValidator == `rock` || userValidator == `paper` || userValidator == `scissors`) {
+    // console.log(`output of input ${computerValidator} and ${userValidator}`);
+
+    if (userValidator == `rock` && computerValidator == `scissors`) {
+      // return `user has won!`;
+      winnerDefinition += `user has won!`;
+    }
+
+    if (userValidator == `scissors` && computerValidator == `paper`) {
+      // return `user has won!`;
+      winnerDefinition += `user has won!`;
+    }
+
+    if (userValidator == `paper` && computerValidator == `rock`) {
+      // return `user has won`;
+      winnerDefinition += `user has won!`;
+    }
+
+    if (computerValidator == userValidator) {
+      winnerDefinition += `game draw!`
+    }
+
+    return winnerDefinition || `computer has won!`
+  }
+}
 
 
 
