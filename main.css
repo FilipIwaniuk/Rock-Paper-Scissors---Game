@@ -3,7 +3,35 @@
   margin: 0;
 }
 
-.header-container .page-title {
-  text-align: center;
-  padding: 25px;
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-container .selection-container {
+  border: 1px solid black;
+  height: 500px;
+  width: 500px;
+}
+
+.footer-container .footer-element {
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 10px solid yellow;
+}
+
