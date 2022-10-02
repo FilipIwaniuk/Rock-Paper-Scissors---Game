@@ -23,6 +23,7 @@ div {
 .header-container .page-title {
   padding-top: 25px;
   padding-bottom: 25px;
+  text-align: center;
 }
 
 .main-container {
@@ -68,4 +69,51 @@ div {
   padding-bottom: 25px;
   display: flex;
   justify-content: center;
+}
+
+.selection-container .selection-title-text {
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.result-container .results-title-text {
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+
+.user-options-container {
+  height: 80%;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.user-options-container>.user-options {
+  border: 2px solid grey;
+  width: 40%;
+  height: 40%;
+  background-color: slategrey;
+}
+
+.user-options p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.selection-container .selection-supporting-text {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-decoration: underline;
+  font-size: 15px;
 }
